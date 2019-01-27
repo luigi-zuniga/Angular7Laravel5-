@@ -3,18 +3,20 @@
 <table class="table table-hove table-primaryr">
   <thead>
     <tr>
-      <th scope="col">s#</th>
+      <th scope="col">id#</th>
       <th scope="col">First</th>
       <th scope="col">Last</th>
       <th scope="col">Handle</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+    <tr *ngFor="let movie of movies">
+      <th scope="row">{{ movie.id} }}</th>
+      <td>{{ movie.name} }}</td>
+      <td>{{ movie.descriptiion} }}</td>
+      <td>{{ movie.genre} }}</td>
+      <td>{{ movie.year} }}</td>
+      <td>{{ movie.duration} }}</td>
     </tr>
   </tbody>
 </table>

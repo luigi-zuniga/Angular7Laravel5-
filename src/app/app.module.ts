@@ -7,6 +7,7 @@ import { FormComponent } from './form/form.component';
 
 import { Route, RouterModule } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Route[] = [
   {path:'' , component: HomeComponent},
@@ -24,7 +25,8 @@ const routes: Route[] = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
